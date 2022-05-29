@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>chatroom</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <span class="container" style="text-align: left;">
+            <button id="logout_button" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+            <button id="back_button" class="btn btn-danger" onclick="back2()">Back</button>
+        </span>
+
+        <!--OUTPUT-->
+
+        <center>
+            <header>
+                Kwitter
+                <sup>
+                    <img style="width: 10px;height: 10px;"src="m2.png">
+                </sup>
+            </header>
+            <div style="text-align: left;margin-bottom: 70px;" id="output"></div>
+        </center>
+
+        <!--INPUT-->
+
+        <center>
+        <div class="container input_div_message">
+            <label>Send:</label>
+            <input type="text" id="msg" class="form-control" placeholder="Message">
+            <button class="btn btn-success text-danger" onclick="send()">Send</button>
+
+        </div>
+        </center>
+        <script src="chatroom.js"></script>
+    </body>
+</html>
